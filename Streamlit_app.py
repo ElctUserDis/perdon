@@ -25,7 +25,7 @@ def main():
     # Muestra el texto adicional en el interior del corazón
     st.markdown(
         """<p style='font-size:24px; font-style:italic; text-align:center;'>
-            Confía en todo lo que nos prometimos<br>
+            Confía en todo lo que planeamos<br>
             y a seguir para adelante
         </p>""",
         unsafe_allow_html=True
