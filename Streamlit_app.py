@@ -3,24 +3,34 @@ import streamlit as st
 def main():
     st.title("EL AMOR NO ES UN JUEGO, Y TÚ TAMPOCO 💖")
 
-    # Dibuja un corazón con destello
-    st.markdown(
-        """<svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
-            <path d="M100 187.5 C10 100, 10 60, 100 10 C190 60, 190 100, 100 187.5" fill="red" />
-            <text x="50%" y="50%" font-size="24" text-anchor="middle" fill="white" font-style="italic">G&S</text>
-        </svg>
-        <style>
-            svg {
-                animation: pulse 2s infinite;
-            }
-            @keyframes pulse {
-                0% { transform: scale(1); }
-                50% { transform: scale(1.2); }
-                100% { transform: scale(1); }
-            }
-        </style>""",
-        unsafe_allow_html=True
-    )
+    # Carga y muestra la imagen
+
+    col1, col2, col3 = st.columns([2,1.8,2]) #Centrar el botón
+    with col1:
+        # Dibuja un corazón con destello
+        st.markdown(
+            """<svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+                <path d="M100 187.5 C10 100, 10 60, 100 10 C190 60, 190 100, 100 187.5" fill="red" />
+                <text x="50%" y="50%" font-size="24" text-anchor="middle" fill="white" font-style="italic">G&S</text>
+            </svg>
+            <style>
+                svg {
+                    animation: pulse 2s infinite;
+                }
+                @keyframes pulse {
+                    0% { transform: scale(1); }
+                    50% { transform: scale(1.2); }
+                    100% { transform: scale(1); }
+                }
+            </style>""",
+            unsafe_allow_html=True
+        )
+    with col2:
+        st.image("Imagen1.jpg", use_column_width=True, width=None)
+
+    with col3:
+        st.image("Imagen.jpg", use_column_width=True, width=None)
+    
 
     # Muestra el texto adicional en el interior del corazón
     st.markdown(
