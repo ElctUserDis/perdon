@@ -9,7 +9,7 @@ def main():
 
     # Carga y muestra la imagen
 
-    col1, col2, col3 = st.columns([2,1.8,2]) #Centrar el botón
+    col1, col2, col3, col4,col5 = st.columns([2,2.85,2,1.8,2]) #Centrar el botón
     with col1:
         # Dibuja un corazón con destello
         st.markdown(
@@ -30,10 +30,12 @@ def main():
             unsafe_allow_html=True
         )
     with col2:
-        st.image("Imagen1.jpg", use_column_width=True, width=None)
+        st.image("Imagen3.jpg", use_column_width=True, width=None)
 
     with col3:
-        st.image("Imagen.jpg", use_column_width=True, width=None)
+        st.image("Imagen2.jpg", use_column_width=True, width=None)
+    with col4:
+        st.image("Imagen1.jpg", use_column_width=True, width=None)
     
 
     # Muestra el texto adicional en el interior del corazón
