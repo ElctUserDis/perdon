@@ -1,4 +1,8 @@
 import streamlit as st
+title_page_web='¡Confía!' #Título del Dashboard
+st.set_page_config(page_title = title_page_web, #Nombre de la pagina, sale arriba cuando se carga streamlit
+                   page_icon = '💖', # https://www.webfx.com/tools/emoji-cheat-sheet/
+                   layout="wide")
 
 def main():
     st.title("EL AMOR NO ES UN JUEGO, Y TÚ TAMPOCO 💖")
